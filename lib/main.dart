@@ -12,6 +12,8 @@ import 'konya.dart';
 import 'yemek.dart';
 import 'yerler.dart';
 import 'mevlana.dart';
+import 'LineChartSample1.dart';
+import 'linechartsample2.dart';
 
 
 void main() {
@@ -38,6 +40,8 @@ class BenimUyg extends StatelessWidget {
          '/yemek': (context) => Yemek(),
          '/yerler': (context) => Yerler(),
          '/mevlana': (context) => Mevlana(),
+         '/grafik' : (context) => LineChartSample1(),
+         '/grafik2' : (context) => LineChartSample2(),
 
       },
     );
@@ -183,7 +187,8 @@ class _MyHomePageState extends State<MyHomePage> {
                      MaterialPageRoute(builder: (context) => Hakkinda()),
                    );
                 },
-                child: Text('Hakkında'),
+                child: Text('KONYA Hakkında'),
+
               ),
             ),
           ],

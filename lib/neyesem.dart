@@ -9,16 +9,16 @@ class Yemek extends StatefulWidget {
 class _YemekState extends State<Yemek> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      //home: Scaffold(
+    return MaterialApp(
+      home: Scaffold(
         backgroundColor: Colors.white,
         appBar: AppBar(
           backgroundColor: Colors.white,
           centerTitle: true,
-          title: Text('Bugün Ne Yesem?', style: TextStyle(color: Colors.black)),
+          title: Text('Yemek Yesem?', style: TextStyle(color: Colors.black)),
         ),
         body: Yemekler(),
-      //),
+      ),
     );
   }
 }
@@ -150,7 +150,7 @@ class _YemeklerState extends State<Yemekler> {
                   child: Image.asset('assets/yemek/corba_$corbaNo.jpg')),
             ),
           ),
-          Text(corbaAdlari[corbaNo - 1], style: TextStyle(fontSize: 20),),
+          Text(corbaAdlari[corbaNo-1], style: TextStyle(fontSize: 20),),
           Container(width: 200,
               child: Divider(height: 5, color: Colors.black,)),
           Expanded(
@@ -162,7 +162,7 @@ class _YemeklerState extends State<Yemekler> {
                 //color: Colors.red,
                   highlightColor: Colors.white,
                   splashColor: Colors.white,
-                  onPressed: yemekleriYenile,
+                  onPressed:yemekleriYenile,
                   //     () {
                   //   setState(() {
                   //     yemekNo = Random().nextInt(5)+1;
@@ -171,7 +171,7 @@ class _YemeklerState extends State<Yemekler> {
                   child: Image.asset('assets/yemek/yemek_$yemekNo.jpg')),
             ),
           ),
-          Text(yemekAdlari[yemekNo - 1], style: TextStyle(fontSize: 20),),
+          Text(yemekAdlari[yemekNo-1], style: TextStyle(fontSize: 20),),
           Container(width: 200,
               child: Divider(height: 5, color: Colors.black,)),
           Expanded(
@@ -192,82 +192,13 @@ class _YemeklerState extends State<Yemekler> {
               ),
             ),
           ),
-          Text(tatliAdlari[tatliNo - 1], style: TextStyle(fontSize: 20),),
+          Text(tatliAdlari[tatliNo-1], style: TextStyle(fontSize: 20),),
           Container(width: 200,
               child: Divider(height: 5, color: Colors.black,)),
-      Padding(
-        padding: const EdgeInsets.symmetric(vertical: 16.0),
-        child: ElevatedButton(
-          style: ElevatedButton.styleFrom(
-            primary: Colors.teal, // background
-            onPrimary: Colors.white, // foreground
-          ),
-          // style: ButtonStyle(
-          //   backgroundColor: MaterialStateProperty.resolveWith<Color>(
-          //         (Set<MaterialState> states) {
-          //       if (states.contains(MaterialState.pressed))
-          //         return Colors.teal;
-          //       return null; // Use the component's default.
-          //     },
-          //   ),
-          // ),
-          onPressed: () {
-            Navigator.pushNamed(context, '/hakkinda');
-          },
-          child: Text('Önceki Sayfaya Dön'),
-        ),
-      ),
-      ],
+        ],
       ),
     );
+
   }
 }
-// class _YemekState extends State<Yemek> {
-//   @override
-//   Widget build(BuildContext context) {
-//     return Scaffold(
-//       backgroundColor: Colors.grey[350],
-//       appBar: AppBar(
-//         backgroundColor: Colors.teal,
-//         title: Text('Yemekler'),
-//       ),
-//       body: Center(
-//         child: Padding(
-//           padding: const EdgeInsets.all(8.0),
-//           child: Column(
-//             mainAxisAlignment: MainAxisAlignment.spaceAround,
-//             children: <Widget>[
-//               Text('Konya Yemekleri',
-//                   style: GoogleFonts.pacifico(fontSize: 60.0, backgroundColor: Colors.teal)),
-//               // Text('...',
-//               //     style: GoogleFonts.pacifico(fontSize: 60.0)),
-//
-//               Padding(
-//                 padding: const EdgeInsets.symmetric(vertical: 16.0),
-//                 child: ElevatedButton(
-//                   style: ElevatedButton.styleFrom(
-//                     primary: Colors.teal, // background
-//                     onPrimary: Colors.white, // foreground
-//                   ),
-//                   // style: ButtonStyle(
-//                   //   backgroundColor: MaterialStateProperty.resolveWith<Color>(
-//                   //         (Set<MaterialState> states) {
-//                   //       if (states.contains(MaterialState.pressed))
-//                   //         return Colors.teal;
-//                   //       return null; // Use the component's default.
-//                   //     },
-//                   //   ),
-//                   // ),
-//                   onPressed: () {
-//                     Navigator.pushNamed(context, '/');
-//                   },
-//                   child: Text('Anasayfaya Dön'),
-//                 ),
-//               ),
-//             ],
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
+

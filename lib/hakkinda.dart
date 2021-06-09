@@ -144,7 +144,29 @@ class _HakkindaState extends State<Hakkinda> {
                   onPressed: () {
                     Navigator.pushNamed(context, '/yemek');
                   },
-                  child: Text('Konya Yemekleri'),
+                  child: Text('BUGÜN NE YESEM'),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.teal, // background
+                    onPrimary: Colors.white, // foreground
+                  ),
+                  // style: ButtonStyle(
+                  //   backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                  //         (Set<MaterialState> states) {
+                  //       if (states.contains(MaterialState.pressed))
+                  //         return Colors.teal;
+                  //       return null; // Use the component's default.
+                  //     },
+                  //   ),
+                  // ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/grafik2');
+                  },
+                  child: Text('Grafik'),
                 ),
               ),
             ],
