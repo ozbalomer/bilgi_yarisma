@@ -13,31 +13,35 @@ class _HakkindaState extends State<Hakkinda> {
       backgroundColor: Colors.grey[350],
       appBar: AppBar(
         backgroundColor: Colors.teal,
-        title: Text('Hakkında'),
+        title: Text('Çeşitli Uygulamalar'),
       ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            // mainAxisAlignment: MainAxisAlignment.spaceAround,
+            // crossAxisAlignment: CrossAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: <Widget>[
-              Text('Bilgi Yarışması',
-                    style: GoogleFonts.pacifico(fontSize: 30.0, backgroundColor: Colors.teal)),
+              // Text('Bilgi Yarışması',
+              //       style: GoogleFonts.pacifico(fontSize: 30.0, backgroundColor: Colors.teal)),
               new Expanded(
                 flex: 1,
                 child: new SingleChildScrollView(
                   child: new Text('Bu uygulama Ömer ÖZBAL tarafından "Mobil Uygulama" dersi kapsamında yapılmıştır.',
                     style: GoogleFonts.pacifico(
-                      fontSize: 20.0, color: Colors.black,
+                      fontSize: 25.0, color: Colors.black,
                     ),
                   ),
                 ),
               ),
               // Text('Bu uygulama Ömer ÖZBAL tarafından "Mobil Uygulama" dersi kapsamında yapılmıştır.',
               //     style: GoogleFonts.pacifico(fontSize: 60.0)),
+              Container(
+                  width: 200,
+                  child: Divider(height: 15, color: Colors.white,)),
+
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.teal, // background
@@ -59,8 +63,8 @@ class _HakkindaState extends State<Hakkinda> {
                 ),
 
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
+              Container(
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.teal, // background
@@ -78,11 +82,12 @@ class _HakkindaState extends State<Hakkinda> {
                   onPressed: () {
                     Navigator.pushNamed(context, '/foto');
                   },
-                  child: Text('Fotoğraflar'),
+                  child: Text('Konya dan Fotoğraflar'),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
+              SizedBox(height: 1.0,),
+              Container(
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.teal, // background
@@ -103,8 +108,9 @@ class _HakkindaState extends State<Hakkinda> {
                   child: Text('Konya Hakkında'),
                 ),
               ),
+              SizedBox(height: 1.0,),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.teal, // background
@@ -126,7 +132,7 @@ class _HakkindaState extends State<Hakkinda> {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.teal, // background
@@ -147,8 +153,30 @@ class _HakkindaState extends State<Hakkinda> {
                   child: Text('BUGÜN NE YESEM'),
                 ),
               ),
+              // Padding(
+              //   padding: const EdgeInsets.symmetric(vertical: 16.0),
+              //   child: ElevatedButton(
+              //     style: ElevatedButton.styleFrom(
+              //       primary: Colors.teal, // background
+              //       onPrimary: Colors.white, // foreground
+              //     ),
+              //     // style: ButtonStyle(
+              //     //   backgroundColor: MaterialStateProperty.resolveWith<Color>(
+              //     //         (Set<MaterialState> states) {
+              //     //       if (states.contains(MaterialState.pressed))
+              //     //         return Colors.teal;
+              //     //       return null; // Use the component's default.
+              //     //     },
+              //     //   ),
+              //     // ),
+              //     onPressed: () {
+              //       Navigator.pushNamed(context, '/yemek');
+              //     },
+              //     child: Text('BUGÜN NE YESEM'),
+              //   ),
+              // ),
               Padding(
-                padding: const EdgeInsets.symmetric(vertical: 16.0),
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     primary: Colors.teal, // background
@@ -164,11 +192,61 @@ class _HakkindaState extends State<Hakkinda> {
                   //   ),
                   // ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/grafik2');
+                    Navigator.pushNamed(context, '/jestler');
                   },
-                  child: Text('Grafik'),
+                  child: Text('Jestler (Gestures)'),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.teal, // background
+                    onPrimary: Colors.white, // foreground
+                  ),
+                  // style: ButtonStyle(
+                  //   backgroundColor: MaterialStateProperty.resolveWith<Color>(
+                  //         (Set<MaterialState> states) {
+                  //       if (states.contains(MaterialState.pressed))
+                  //         return Colors.teal;
+                  //       return null; // Use the component's default.
+                  //     },
+                  //   ),
+                  // ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/api');
+                  },
+                  child: Text('Sözlük (İngilizce)'),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.teal, // background
+                    onPrimary: Colors.white, // foreground
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/todo');
+                  },
+                  child: Text('Görüşleriniz'),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.teal, // background
+                    onPrimary: Colors.white, // foreground
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/firestore');
+                  },
+                  child: Text('Firestore'),
+                ),
+              ),
+
+
             ],
           ),
         ),

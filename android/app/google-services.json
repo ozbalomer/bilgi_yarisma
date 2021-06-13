@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "789763885875",
+    "project_id": "bilgiyarismakny",
+    "storage_bucket": "bilgiyarismakny.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789763885875:android:40dd3540362e17b65c4c46",
+        "android_client_info": {
+          "package_name": "com.ozbalomer.bilgi_yarisma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "789763885875-nu94443mhanjei2spvdqs351gveu4d95.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3MYskMKDwHaGOoOt-HjWwIErLp_ugQqE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "789763885875-nu94443mhanjei2spvdqs351gveu4d95.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -59,6 +59,47 @@ class _KonyaState extends State<Konya> {
               // Text("Konya, Türkiye'nin yüz ölçümü bakımından en büyük ili ve en kalabalık yedinci şehridir. 31 ilçeden oluşur. Konya İl Nüfusu: 2.250.020'dir. (2020) [1] Trafik plaka numarası 42'dir.[3] 1875'te kurulan Konya Belediyesi, 1987'de çıkarılan 3399 sayılı yasa gereğince 'büyükşehir' statüsüne kavuşmuş olup 1989'dan beri belediye hizmetleri bu statüye göre yürütülmektedir. 2014'te 6360 sayılı kanun ile büyükşehir belediyesinin sınırları il mülki sınırları oldu. "
               //     "Ekonomik açıdan Türkiye'nin gelişmiş kentlerinden biri olan Konya doğal ve tarihsel zenginlikleriyle de önem taşır. Dünyanın en eski yerleşimlerinden biri olan Çatalhöyük, 2012 yılında UNESCO Dünya Miras Listesi'ne alınmıştır. Şehir Anadolu Selçukluları’nın ve Karamanoğulları’nın başkentliğini yapmıştır. Türkiye'nin en önemli sanayi kentlerinden birisidir. Anadolu Kaplanları'ndandır. Şehrin futbol takımı Konyaspor'dur. Yöresel yemekleri Etliekmek, Bamya Çorbası, Mevlana böreği, Yağ Somunu, Tirit, Konya Pilavı, Sac arası ve Fırın kebabı'dır. Konya’nın simgeleri Mevlana Müzesi (Kubbe-i Hadrâ), çift başlı kartal'dır.",
               //     style: GoogleFonts.pacifico(fontSize: 60.0)),
+              Card(
+                  margin: EdgeInsets.symmetric(
+                    horizontal: 30,
+                  ),
+                  //padding: EdgeInsets.all(10.0),
+                  color: Colors.teal[900],
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Row(
+                      children: [
+                        Icon(Icons.email, color: Colors.amber),
+                        SizedBox(width: 10,),
+                        Text('aaa@bbb.com',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20.0,
+                          ),)
+                      ],
+                    ),
+                  )),
+              SizedBox(height: 5),
+              Card(
+                margin: EdgeInsets.symmetric(
+                  horizontal: 30,
+                ),
+                //padding: EdgeInsets.all(10.0),
+                color: Colors.teal[900],
+                child: ListTile(
+                  leading: Icon(
+                      Icons.phone,
+                      color: Colors.amber
+                  ),
+                  title: Text(
+                    '+90 123 45 67',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.symmetric(vertical: 16.0),
                 child: ElevatedButton(

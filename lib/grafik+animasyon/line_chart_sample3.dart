@@ -12,7 +12,7 @@ class LineChartSample3 extends StatefulWidget {
 }
 
 class _LineChartSample3State extends State<LineChartSample3> {
-  late double touchedValue;
+  double touchedValue;
 
   @override
   void initState() {
@@ -126,7 +126,7 @@ class _LineChartSample3State extends State<LineChartSample3> {
                         lineTouch.touchInput is! PointerUpEvent;
 
                     if (desiredTouch && lineTouch.lineBarSpots != null) {
-                      final value = lineTouch.lineBarSpots![0].x;
+                      final value = lineTouch.lineBarSpots[0].x;
 
                       if (value == 0 || value == 6) {
                         setState(() {
