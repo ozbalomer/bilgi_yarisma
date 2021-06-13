@@ -1,26 +1,25 @@
-import 'package:bilgi_yarisma/hata.dart';
-import 'package:bilgi_yarisma/mevlana.dart';
-import 'package:bilgi_yarisma/sorular.dart';
+import 'package:bilgi_yarisma/yarisma/hata.dart';
+import 'package:bilgi_yarisma/hakkindapage/mevlana.dart';
+import 'package:bilgi_yarisma/yarisma/sorular.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart' show AssetImage, BuildContext, Center, CircleAvatar, Colors, Column, Container, EdgeInsets, ElevatedButton, InputDecoration, MainAxisAlignment, MaterialApp, MaterialPageRoute, Navigator, Padding, RouteSettings, SafeArea, Scaffold, SizedBox, State, StatefulWidget, StatelessWidget, Text, TextFormField, TextInputType, ThemeData, Widget, runApp;
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'bitir.dart';
-import 'hakkinda.dart';
-import 'foto.dart';
-import 'konya.dart';
-import 'yemek.dart';
-import 'yerler.dart';
-import 'mevlana.dart';
+import 'yarisma/bitir.dart';
+import 'hakkindapage/hakkinda.dart';
+import 'hakkindapage/foto.dart';
+import 'hakkindapage/konya.dart';
+import 'hakkindapage/yemek.dart';
+import 'hakkindapage/yerler.dart';
+import 'hakkindapage/mevlana.dart';
 import 'grafik+animasyon/LineChartSample1.dart';
 import 'grafik+animasyon/linechartsample2.dart';
 import 'sqllite/todo.dart';
 import 'gestures/jestler.dart';
 import 'api/api.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'firestore.dart';
+import 'firestore/firestore.dart';
 
 
 
@@ -230,26 +229,26 @@ class _MyHomePageState extends State<MyHomePage> {
 
               ),
             ),
-            Container(
-              margin: EdgeInsets.symmetric(horizontal: 45.0,),
-              //padding: const EdgeInsets.symmetric(vertical: 8.0),
-              child: ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  primary: Colors.teal, // background
-                  onPrimary: Colors.white, // foreground
-                ),
-                onPressed: () {
-                  FirebaseFirestore firestore = FirebaseFirestore.instance;
-                  CollectionReference bilgiyarismaRef =
-                  FirebaseFirestore.instance.collection('bilgiyarisma');
-                  bilgiyarismaRef.add({'AdSoyad' : '$adSoyad'});
-                  bilgiyarismaRef.add({'OgrNo' : '$ogrNo'});
-                },
-                child: Text('Veri Tabanına Ekle(Firestore)'),
-
-
-              ),
-            ),
+            // Container(
+            //   margin: EdgeInsets.symmetric(horizontal: 45.0,),
+            //   //padding: const EdgeInsets.symmetric(vertical: 8.0),
+            //   child: ElevatedButton(
+            //     style: ElevatedButton.styleFrom(
+            //       primary: Colors.teal, // background
+            //       onPrimary: Colors.white, // foreground
+            //     ),
+            //     onPressed: () {
+            //       FirebaseFirestore firestore = FirebaseFirestore.instance;
+            //       CollectionReference bilgiyarismaRef =
+            //       FirebaseFirestore.instance.collection('bilgiyarisma');
+            //       bilgiyarismaRef.add({'AdSoyad' : '$adSoyad'});
+            //       bilgiyarismaRef.add({'OgrNo' : '$ogrNo'});
+            //     },
+            //     child: Text('Veri Tabanına Ekle(Firestore)'),
+            //
+            //
+            //   ),
+            // ),
 
 
           ],

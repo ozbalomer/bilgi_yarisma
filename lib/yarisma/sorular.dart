@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:google_fonts/google_fonts.dart';
 
 
-import 'package:bilgi_yarisma/bitir.dart';
+import 'package:bilgi_yarisma/yarisma/bitir.dart';
 import 'package:flutter/material.dart' show BuildContext, Center, Colors, Column, EdgeInsets, ElevatedButton, MainAxisAlignment, MaterialPageRoute, ModalRoute, Navigator, Padding, RouteSettings, Scaffold, SizedBox, State, StatefulWidget, Text, TextAlign, TextStyle, Widget;
 
 import 'bitir.dart';
