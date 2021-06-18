@@ -17,7 +17,9 @@ class _LineChartSample2State extends State<LineChartSample2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("LineChartSample2"),),
+      appBar: AppBar(
+          backgroundColor: Colors.teal,
+        title: Text("Grafik + Animasyon"),),
          body: AspectRatio(
             aspectRatio: 1.70,
             child: Container(

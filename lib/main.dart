@@ -1,7 +1,6 @@
 import 'package:bilgi_yarisma/yarisma/hata.dart';
 import 'package:bilgi_yarisma/hakkindapage/mevlana.dart';
 import 'package:bilgi_yarisma/yarisma/sorular.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart' show AssetImage, BuildContext, Center, CircleAvatar, Colors, Column, Container, EdgeInsets, ElevatedButton, InputDecoration, MainAxisAlignment, MaterialApp, MaterialPageRoute, Navigator, Padding, RouteSettings, SafeArea, Scaffold, SizedBox, State, StatefulWidget, StatelessWidget, Text, TextFormField, TextInputType, ThemeData, Widget, runApp;
 import 'package:flutter/services.dart';

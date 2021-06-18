@@ -245,6 +245,21 @@ class _HakkindaState extends State<Hakkinda> {
                   child: Text('Firestore'),
                 ),
               ),
+              Padding(
+                padding: const EdgeInsets.symmetric(vertical: 2.0),
+                child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    primary: Colors.teal, // background
+                    onPrimary: Colors.white, // foreground
+                  ),
+                  onPressed: () {
+                    Navigator.pushNamed(context, '/grafik2');
+                  },
+                  child: Text('Grafik+Animasyon'),
+                ),
+              ),
+
+
 
 
             ],
